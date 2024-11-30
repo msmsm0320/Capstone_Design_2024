@@ -9,6 +9,7 @@
 ## 연구 배경
 ![image](https://github.com/user-attachments/assets/9c7d399c-fcbe-43da-b22a-4159c66b7580)
 ![image](https://github.com/user-attachments/assets/2ae0e007-2c0e-4804-9cd0-ee68cbc26de6)
+
 점차 증가하는 대한민국의 고령화 지수와 2023년 6월 23일부터 요양시설 CCTV 의무화.
 ---
 ## 주요 기능
