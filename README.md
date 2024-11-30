@@ -6,7 +6,11 @@
 **모바일 앱** 및 **웹 대시보드**를 통해 실시간 알림을 제공하며, 관리자가 즉각적으로 상황을 파악할 수 있도록 지원합니다.
 
 ---
-
+## 연구 배경
+![image](https://github.com/user-attachments/assets/9c7d399c-fcbe-43da-b22a-4159c66b7580)
+![image](https://github.com/user-attachments/assets/2ae0e007-2c0e-4804-9cd0-ee68cbc26de6)
+점차 증가하는 대한민국의 고령화 지수와 2023년 6월 23일부터 요양시설 CCTV 의무화.
+---
 ## 주요 기능
 ### 1. **낙상 감지 알고리즘**
 - **YOLOv8n-pose**: 키포인트 추출을 기반으로 자세 분석 및 낙상 여부 판별.
@@ -28,10 +32,17 @@
 ---
 
 ## 시스템 구성
+
+전체 시스템 구상도
+![image](https://github.com/user-attachments/assets/20af665b-deee-4d14-ba5f-6d09a5dc6db1)
+
 ### 1. **낙상 감지 모니터링 시스템 구조**
 - **실시간 영상 수집**: RTSP CCTV를 통해 실시간 영상 전송.
 - **알고리즘 적용**: YOLOv8n-pose 기반 키포인트 추출 및 분석.
 - **알림 전송**: 낙상 감지 시 즉시 관리자 및 보호자에게 알림 발송.
+
+
+![image](https://github.com/user-attachments/assets/20a0bbb9-a6a7-439e-a4ac-429d582b0152)
 
 ### 2. **낙상 감지 알고리즘 과정**
 - 키포인트 기반 상태 정의:
@@ -61,6 +72,16 @@
 - 실시간 CCTV 모니터링 시스템:
   - 낙상 발생 시 상황 확인 및 즉각적인 대처.
   - 클라우드 저장소를 통한 영상 및 이미지 저장.
+
+### 3. **Firebase Realtime Database, Storage**
+- 임의로 지정한 Firebase Realtime Database 및 Storage에 낙상 로그와 낙상 중인 객체의 크롭 이미지와 낙상 상황의 비디오를 저장.
+### 4. **사용자의 로컬 환경(Image + Video)**
+- 사용자의 로컬 환경에 낙상 중인 객체의 크롭 이미지와 낙상 상황의 비디오를 저장.
+---
+
+## 관련대외 활동
+![image](https://github.com/user-attachments/assets/1e99774a-14dc-404e-b8f6-d8ecd906ad6e)
+![image](https://github.com/user-attachments/assets/25070560-410b-4a3d-aa92-551346ba5cc2)
 
 ---
 
