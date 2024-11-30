@@ -1,0 +1,67 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:weightSum="1"> <!-- 가중치 합 설정 -->
+
+        <TextView
+            android:id="@+id/noticeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공지사항"
+            android:textSize="25sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:textColor="#66BB6A"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"> <!-- TextView와의 여백 -->
+
+            <LinearLayout
+                android:id="@+id/noticeListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <!-- 버튼들을 하단에 배치 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"> <!-- 가운데 정렬 -->
+
+            <Button
+                android:id="@+id/addNoticeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="공지사항 작성"
+                android:visibility="gone"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#66BB6A"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/addInquiryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="문의사항"
+                android:visibility="visible"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#66BB6A"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

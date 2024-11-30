@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F1F8E9">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#8E8E8E"
+        android:textColor="#333333"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" /> <!-- 공백을 위한 View -->
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#8E8E8E"
+        android:textColor="#333333"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

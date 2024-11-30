@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:alpha="0.1"
+            android:scaleType="centerInside"
+            android:src="@drawable/img" />
+        <Button
+            android:id="@+id/liveStreamButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="실시간 모니터링"
+            android:layout_above="@id/logoutButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"/>
+
+        <!-- 로그아웃 버튼 -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"/>
+
+
+        <!-- 공통 사항: 환자 상태 표시 -->
+        <TextView
+            android:id="@+id/patientStatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Care Link에 오신 것을 환영합니다!"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#66BB6A"/>
+
+        <TextView
+            android:id="@+id/patientStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:layout_below="@id/patientStatusLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+
+
+        <!-- 관리자 전용: 시니어 추가 버튼 -->
+        <Button
+            android:id="@+id/addSeniorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시니어 추가"
+            android:layout_above="@id/viewSeniorsButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"/>
+
+        <!-- 관리자 전용: 시니어 정보 보기 버튼 -->
+        <Button
+            android:id="@+id/viewSeniorsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시니어 정보"
+            android:layout_above="@id/bulletinBoardButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:visibility="gone"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"/>
+
+
+
+        <!-- 보호자 전용: 시니어 버튼 -->
+        <Button
+            android:id="@+id/contactSeniorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시니어 연결"
+            android:layout_below="@id/patientStatusTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"/>
+
+        <Button
+            android:id="@+id/bulletinBoardButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공지사항 및 문의사항"
+            android:layout_above="@id/liveStreamButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            />
+
+
+
+        <!-- 보호자 전용: 시니어 정보 표시 -->
+        <LinearLayout
+            android:id="@+id/seniorInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/contactSeniorButton"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/seniorNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seniorRoomIDTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="방 번호: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seniorAdmissionDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="등록 날짜: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seniorBirthDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="생년월일: "
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/seniorGenderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seniorConditionsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상태: "
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="?android:attr/windowBackground"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

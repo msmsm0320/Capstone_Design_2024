@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F1F8E9"> <!-- 연한 초록색 배경 -->
+
+    <!-- 로고 이미지 추가 -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerInside"
+        android:alpha="0.1"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/managerEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="관리자 이메일"
+                android:inputType="textEmailAddress"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:textColorHint="#8E8E8E"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:textColorHint="#8E8E8E"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="이름"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:textColorHint="#8E8E8E"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/positionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="직급"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:textColorHint="#8E8E8E"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="전화번호"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:textColorHint="#8E8E8E"
+                android:textColor="#333333"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/adminSignupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:backgroundTint="#66BB6A"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

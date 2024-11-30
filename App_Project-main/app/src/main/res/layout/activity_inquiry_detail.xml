@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F1F8E9">
+
+    <!-- 문의 제목 -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문의 제목"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 문의 본문 -->
+    <TextView
+        android:id="@+id/bodyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문의 본문"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 작성자의 이름 -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작성자: 이름 없음"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- 작성자의 Senior ID -->
+    <TextView
+        android:id="@+id/seniorIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senior ID: ID 없음"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 댓글 입력 -->
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="댓글을 입력하세요"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#8E8E8E"
+        android:textColor="#333333"/>
+
+    <!-- 댓글 작성 버튼 -->
+    <Button
+        android:id="@+id/commentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="댓글 작성"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        />
+
+    <!-- 댓글 목록 -->
+    <ListView
+        android:id="@+id/commentsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

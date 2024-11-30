@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F1F8E9"> <!-- 연한 초록색 배경 -->
+
+    <!-- 배경에 로고 이미지 추가 -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+        android:scaleType="centerInside"
+        android:alpha="0.1"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true" />
+
+    <!-- UI 요소들을 LinearLayout으로 묶음 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 검색 입력 필드 -->
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="시니어 이름 검색"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_background"
+            android:textColorHint="#8E8E8E"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp"/>
+
+        <!-- 검색 버튼 -->
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"/>
+
+        <!-- Senior 목록 ListView -->
+        <ListView
+            android:id="@+id/seniorsListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:divider="#BDBDBD"
+            android:dividerHeight="1dp"/>
+    </LinearLayout>
+</RelativeLayout>

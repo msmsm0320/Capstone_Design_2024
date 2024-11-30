@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"> <!-- 하얀색 배경 -->
+
+    <!-- 배경에 로고 이미지 추가 -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img"
+    android:scaleType="centerInside"
+    android:alpha="0.1"
+    android:layout_centerInParent="true"
+    android:adjustViewBounds="true" />
+
+    <!-- Admin Signup 버튼 -->
+    <Button
+        android:id="@+id/adminSignupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="관리자 회원가입"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"/>
+
+    <!-- Caregiver Signup 버튼 -->
+    <Button
+        android:id="@+id/caregiverSignupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보호자 회원가입"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/adminSignupButton"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"/>
+
+</RelativeLayout>

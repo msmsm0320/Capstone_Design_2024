@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F1F8E9"> <!-- 연한 초록색 배경 -->
+
+    <!-- 상단에 Care Link 텍스트 추가 -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Care Link"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#66BB6A"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+    <!-- 배경에 로고 이미지 추가 -->
+
+    <!-- 이메일 입력 필드 -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:alpha="0.1"
+        android:scaleType="centerInside"
+        android:src="@drawable/img" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:layout_above="@+id/passwordEditText"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#8E8E8E"
+        android:textColor="#333333"/>
+
+    <!-- 패스워드 입력 필드 -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:layout_above="@+id/loginButton"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:textColorHint="#8E8E8E"
+        android:textColor="#333333"/>
+
+    <!-- 로그인 버튼 -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:layout_above="@+id/signupButton"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"/>
+
+    <!-- 회원가입 버튼 -->
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"/>
+</RelativeLayout>

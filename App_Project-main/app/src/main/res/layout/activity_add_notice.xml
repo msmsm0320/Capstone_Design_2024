@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F1F8E9"
+    android:gravity="center"> <!-- 중앙 정렬 추가 -->
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="공지사항 제목"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text"
+        android:layout_marginBottom="8dp" /> <!-- 아래 여백 추가 -->
+
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="내용"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:minLines="6"
+        android:layout_weight="1" /> <!-- 비율 할당 -->
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제출"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"/>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F1F8E9"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/seniorNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름: "
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/seniorRoomIDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="호실: "
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/seniorAdmissionDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="등록날짜: "
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/seniorBirthDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="생년월일: "
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/seniorConditionsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="특이사항: "
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/seniorGenderTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별: "
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- 상태 업데이트를 위한 EditText -->
+        <EditText
+            android:id="@+id/updateConditionsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="특이사항 수정"
+            android:background="@drawable/edit_text_background"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:inputType="text"/>
+
+        <!-- 상태 업데이트 버튼 -->
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="특이사항 수정 완료"
+            android:backgroundTint="#66BB6A"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</ScrollView>

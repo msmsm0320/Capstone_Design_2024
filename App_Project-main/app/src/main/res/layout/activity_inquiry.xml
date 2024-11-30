@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F1F8E9">
+
+    <TextView
+        android:id="@+id/noticeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문의사항"
+        android:textSize="25sp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="#66BB6A"
+        />
+
+    <ListView
+        android:id="@+id/inquiryListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/inquiryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문의 작성"
+        android:backgroundTint="#66BB6A"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+</LinearLayout>
