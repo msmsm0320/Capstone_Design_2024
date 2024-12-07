@@ -114,12 +114,18 @@
 
 ### 3. **Firebase Realtime Database, Storage**
 - 임의로 지정한 Firebase Realtime Database 및 Storage에 낙상 로그와 낙상 중인 객체의 크롭 이미지와 낙상 상황의 비디오를 저장.
-
+  - Firebase 로그
+  - 
   ![image](https://github.com/user-attachments/assets/85c1835a-1341-405f-8fe9-1e7ff9a1ce60)
 
+  - Storage 저장된 이미지
+  - 
   ![image](https://github.com/user-attachments/assets/cca5baee-a7ca-4540-802c-f699d9d9efa0)
 
+  - Storage 저장된 동영상
+  - 
   ![image](https://github.com/user-attachments/assets/aa5a0ace-ad97-4884-949f-30955280764e)
+
 
   
 ### 4. **사용자의 로컬 환경(Image + Video)**
