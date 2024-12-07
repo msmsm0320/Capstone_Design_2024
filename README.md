@@ -6,6 +6,13 @@
 **모바일 앱** 및 **웹 대시보드**를 통해 실시간 알림을 제공하며, 관리자가 즉각적으로 상황을 파악할 수 있도록 지원합니다.
 
 ---
+## 팀원 소개
+홍익대학교 소프트웨어융합학과
+박준렬
+박민현
+이민혁
+전민서
+---
 ## 연구 배경
 ![image](https://github.com/user-attachments/assets/9c7d399c-fcbe-43da-b22a-4159c66b7580)
 ![image](https://github.com/user-attachments/assets/2ae0e007-2c0e-4804-9cd0-ee68cbc26de6)
