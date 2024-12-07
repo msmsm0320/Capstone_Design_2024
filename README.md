@@ -8,10 +8,15 @@
 ---
 ## 팀원 소개
 홍익대학교 소프트웨어융합학과
+
 박준렬
+
 박민현
+
 이민혁
+
 전민서
+
 ---
 ## 연구 배경
 ![image](https://github.com/user-attachments/assets/9c7d399c-fcbe-43da-b22a-4159c66b7580)
