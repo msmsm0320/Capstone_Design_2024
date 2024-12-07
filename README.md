@@ -77,19 +77,47 @@
 ### 1. **앱**
 - 관리자를 위한 요양시설 업무 지원 시스템:
   - 시니어 정보 확인 및 공지/문의사항 관리.
+ 
+  ![image](https://github.com/user-attachments/assets/497027fb-a222-46ee-9768-fbd216230be6)
+
+  ![image](https://github.com/user-attachments/assets/28103c12-a782-4710-8b68-471fbe327b08)
+
+  ![image](https://github.com/user-attachments/assets/688b490f-a9dc-43f6-a9a9-15d48aa41578)
+
+
   - 낙상 발생 시 경고 알림 발송.
+    
 - 보호자를 위한 앱:
   - 담당 환자의 상태 및 알림 확인.
 
 ### 2. **웹**
+- 사용자 로그인
 - 실시간 CCTV 모니터링 시스템:
   - 낙상 발생 시 상황 확인 및 즉각적인 대처.
-  - 클라우드 저장소를 통한 영상 및 이미지 저장.
+    
+    ![image](https://github.com/user-attachments/assets/acbd6e7b-da0d-4cae-87ae-68251044a11b)
+
+
+- 공지사항 및 문의사항 등 관리.
+
+    ![image](https://github.com/user-attachments/assets/3c1741a4-a986-4103-9581-073f2c64fd5a)
+
+    ![image](https://github.com/user-attachments/assets/94693cca-177b-4709-93dd-80e6695f2036)
+
+    ![image](https://github.com/user-attachments/assets/b43c237f-a2f5-4136-969c-af71b82bc10f)
+
 
 ### 3. **Firebase Realtime Database, Storage**
 - 임의로 지정한 Firebase Realtime Database 및 Storage에 낙상 로그와 낙상 중인 객체의 크롭 이미지와 낙상 상황의 비디오를 저장.
+
+  ![image](https://github.com/user-attachments/assets/3d7dbe81-3bd2-4f76-a1c3-cab77b1f0a96)
+
+  
 ### 4. **사용자의 로컬 환경(Image + Video)**
 - 사용자의 로컬 환경에 낙상 중인 객체의 크롭 이미지와 낙상 상황의 비디오를 저장.
+
+   ![image](https://github.com/user-attachments/assets/4abf148a-9725-4b39-8a29-39e649368a5e)
+
 ---
 
 ## 관련대외 활동
