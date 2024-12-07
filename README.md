@@ -25,12 +25,21 @@
 ### 3. **웹 및 앱 모니터링 시스템**
 - **웹 관리자 대시보드**:
   - 실시간 낙상 감지 및 CCTV 피드 확인.
- ![image](https://github.com/user-attachments/assets/da52ca6d-a299-4379-8eab-4409df81deda)
+  
+  ![image](https://github.com/user-attachments/assets/da52ca6d-a299-4379-8eab-4409df81deda)
 
     
   - 시니어 정보 등록 및 관리, 공지사항 및 문의사항 관리.
 - **모바일 앱**:
   - 보호자와 관리자에게 실시간 낙상 알림 전송.
+ 
+![image](https://github.com/user-attachments/assets/5f4cce22-b2bc-4e34-bd6f-2993d8f9e1d5)
+
+
+![image](https://github.com/user-attachments/assets/20d58a72-74d4-4deb-8394-cf72b7b343da)
+
+
+    
   - 보호자는 담당 환자의 정보와 상태를 확인 가능.
 
 ---
