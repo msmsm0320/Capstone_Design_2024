@@ -80,9 +80,14 @@
  
   ![image](https://github.com/user-attachments/assets/497027fb-a222-46ee-9768-fbd216230be6)
 
+
+
   ![image](https://github.com/user-attachments/assets/28103c12-a782-4710-8b68-471fbe327b08)
 
+
+
   ![image](https://github.com/user-attachments/assets/688b490f-a9dc-43f6-a9a9-15d48aa41578)
+
 
 
   - 낙상 발생 시 경고 알림 발송.
